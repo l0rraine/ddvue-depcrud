@@ -1,6 +1,6 @@
 <?php
 
-namespace Qla\DepCRUD;
+namespace DDVue\DepCRUD;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
