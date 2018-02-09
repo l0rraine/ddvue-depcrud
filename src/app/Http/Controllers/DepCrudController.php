@@ -1,9 +1,9 @@
 <?php
 
-namespace Qla\DepCRUD\app\Http\Controllers;
+namespace DDVue\DepCRUD\app\Http\Controllers;
 
-use Qla\Crud\Controllers\CrudController;
-use Qla\DepCRUD\app\Models\Department;
+use DDVue\Crud\Controllers\CrudController;
+use DDVue\DepCRUD\app\Models\Department;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 
@@ -37,7 +37,7 @@ class DepCrudController extends CrudController
         $this->crud->title          = '单位';
         $this->crud->viewName       = 'depcrud::department';
 
-        $this->crud->setModel(config('qla.depcrud.dep_model',\Qla\DepCRUD\app\Models\Department::class));
+        $this->crud->setModel(config('qla.depcrud.dep_model',\DDVue\DepCRUD\app\Models\Department::class));
 
         $this->crud->setPermissionName('list.department');
     }

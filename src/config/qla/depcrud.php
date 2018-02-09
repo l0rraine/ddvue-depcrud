@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'dep_model' => Qla\DepCRUD\app\Models\Department::class,
+    'dep_model' => DDVue\DepCRUD\app\Models\Department::class,
 ];

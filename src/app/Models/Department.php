@@ -1,10 +1,10 @@
 <?php
 
-namespace Qla\DepCRUD\app\Models;
+namespace DDVue\DepCRUD\app\Models;
 
-use Qla\Crud\app\Models\BaseClassifiedModel;
-use Qla\Crud\ModelTraits\BaseModelTrait;
-use Qla\Crud\app\Http\Helpers\Pinyin;
+use DDVue\Crud\app\Models\BaseClassifiedModel;
+use DDVue\Crud\ModelTraits\BaseModelTrait;
+use DDVue\Crud\app\Http\Helpers\Pinyin;
 
 class Department extends BaseClassifiedModel
 {
