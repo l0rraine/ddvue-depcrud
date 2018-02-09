@@ -1,0 +1,20 @@
+{
+    "name": "ddvue/depcrud",
+    "description": "package for department crud things",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "l0rraine",
+            "email": "idn.lee@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ddvue/crud": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "DDVue\\DepCRUD\\": "src"
+        }
+    }
+}
