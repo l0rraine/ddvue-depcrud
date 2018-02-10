@@ -32,7 +32,7 @@ class DepCRUDServiceProvider extends ServiceProvider
             __DIR__.'/resources/views' => resource_path('views/vendor/ddvue/depcrud'),
             __DIR__.'/database/migrations' => database_path('migrations'),
             __DIR__ . '/config/ddvue' => config_path('ddvue'),
-        ], 'ddvue');
+        ], 'ddvue-depcrud');
 
     }
 
