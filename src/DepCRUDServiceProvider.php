@@ -17,7 +17,7 @@ class DepCRUDServiceProvider extends ServiceProvider
 
         // LOAD THE CONFIG
         $this->mergeConfigFrom(
-            __DIR__ . '/config/ddvue/depcrud.php', 'ddvue.depcrud'
+            config_path('ddvue/adminpanel.php'), 'ddvue.adminpanel'
         );
 
 
@@ -39,7 +39,7 @@ class DepCRUDServiceProvider extends ServiceProvider
     public function setupRoutes(Router $router)
     {
         $router->group(['namespace' => 'DDVue\DepCRUD\app\Http\Controllers'], function ($router) {
-            \Route::group(['prefix' => config('ddvue.adminpanel.route_prefix', 'Crud.Department'), 'middleware' => config('ddvue.adminpanel.admin_auth_middleware',['auth'])], function () {
+            \Route::group(['prefix' => config('ddvue.adminpanel.url_prefix', 'Crud.Department'), 'middleware' => config('ddvue.adminpanel.admin_auth_middleware',['auth'])], function () {
                 require __DIR__.'/routes/depcrud.php';
             });
         });
