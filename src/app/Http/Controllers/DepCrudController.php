@@ -37,7 +37,7 @@ class DepCrudController extends CrudController
         $this->crud->title          = '单位';
         $this->crud->viewName       = 'depcrud::department';
 
-        $this->crud->setModel(config('qla.depcrud.dep_model',\DDVue\DepCRUD\app\Models\Department::class));
+        $this->crud->setModel(config('qla.depcrud.dep_model', \DDVue\DepCRUD\app\Models\Department::class));
 
         $this->crud->setPermissionName('list.department');
     }
@@ -83,7 +83,11 @@ class DepCrudController extends CrudController
     public function indexJson()
     {
         $r = $this->department->getAllByParentId();
-        return json_encode($r);
+
+        return json_encode([
+            'total' => count($r),
+            'data'  => $r,
+        ]);
     }
 
 
